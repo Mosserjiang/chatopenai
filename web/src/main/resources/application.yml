@@ -1,0 +1,8 @@
+server:
+  port: 8012
+
+
+open:
+  ai:
+    key: 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 #√ÿ‘ø
+    modelChat: gpt-3.5-turbo-0301 #chat
