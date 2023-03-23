@@ -5,28 +5,25 @@
 	<parent>
 		<groupId>com.chatai</groupId>
 		<artifactId>openai</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<artifactId>service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>ai_service</artifactId>
+	<version>1.0-SNAPSHOT</version>
 	<name>service</name>
 
 	<packaging>jar</packaging>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.chatai</groupId>
-			<artifactId>common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>ai_common</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.chatai</groupId>
-			<artifactId>dao</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>ai_dao</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.theokanning.openai-gpt3-java</groupId>

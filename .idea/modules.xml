@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ai_common/ai_common.iml" filepath="$PROJECT_DIR$/ai_common/ai_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ai_dao/ai_dao.iml" filepath="$PROJECT_DIR$/ai_dao/ai_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ai_service/ai_service.iml" filepath="$PROJECT_DIR$/ai_service/ai_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ai_web/ai_web.iml" filepath="$PROJECT_DIR$/ai_web/ai_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/openai.iml" filepath="$PROJECT_DIR$/openai.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>

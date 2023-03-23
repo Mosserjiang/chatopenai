@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="web:war exploded">
-    <output-path>$PROJECT_DIR$/web/target/web-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -11,20 +11,20 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="web" />
+          <element id="module-output" name="ai_web" />
         </element>
         <element id="directory" name="lib">
           <element id="archive" name="web-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="web" />
+            <element id="module-output" name="ai_web" />
           </element>
-          <element id="archive" name="service-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="service" />
+          <element id="archive" name="service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ai_service" />
           </element>
-          <element id="archive" name="common-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="common" />
+          <element id="archive" name="common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ai_common" />
           </element>
-          <element id="archive" name="dao-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="dao" />
+          <element id="archive" name="dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ai_dao" />
           </element>
           <element id="library" level="project" name="Maven: com.theokanning.openai-gpt3-java:client:0.9.0" />
           <element id="library" level="project" name="Maven: com.theokanning.openai-gpt3-java:api:0.9.0" />
@@ -70,9 +70,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/web/target/web-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/ai_web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="web/web/Web" />
+      <element id="javaee-facet-resources" facet="ai_web/web/Web" />
     </root>
   </artifact>
 </component>
