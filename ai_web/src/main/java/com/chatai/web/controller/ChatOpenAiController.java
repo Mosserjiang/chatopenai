@@ -22,11 +22,17 @@ public class ChatOpenAiController {
     private ChatOpenAiService chatOpenAiService;
 
     @ResponseBody
-    @RequestMapping(value = "/get-chat-info", produces = "application/json;charset=UTF-8", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "/get-chat-info", produces = "application/json;charset=UTF-8", method = {RequestMethod.GET})
     public String openAiChat(@RequestParam("question")String question) throws IOException {
         if(StringUtils.isBlank(question)){
             return "Please Input";
         }
         return chatOpenAiService.chat(question);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/test", method = {RequestMethod.GET})
+    public String test(){
+        return chatOpenAiService.test();
     }
 }
