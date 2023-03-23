@@ -45,9 +45,4 @@ public class ChatOpenAiServiceImpl implements ChatOpenAiService {
         String responseBody = response.body().string();
        return responseBody;
     }
-
-    @Override
-    public String test() {
-        return "success";
-    }
 }

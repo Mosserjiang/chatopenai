@@ -29,10 +29,4 @@ public class ChatOpenAiController {
         }
         return chatOpenAiService.chat(question);
     }
-
-    @ResponseBody
-    @RequestMapping(value = "/test", method = {RequestMethod.GET})
-    public String test(){
-        return chatOpenAiService.test();
-    }
 }

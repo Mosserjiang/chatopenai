@@ -13,10 +13,4 @@ public interface ChatOpenAiService {
      * @return String
      */
     String chat(String question) throws IOException;
-
-    /**
-     * 测试
-     * @return String
-     */
-    String test();
 }
