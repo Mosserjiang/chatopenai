@@ -30,7 +30,8 @@ public class ChatOpenAiServiceImpl implements ChatOpenAiService {
 
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
         String requestBody = "{\"model\":\""+ modelChat +"\",\"messages\":[{\"role\":\"user\",\"content\":\""+ question +"\"}]}";
-
+        log.info("openAiKey={}", openAiKey);
+        log.info("requestBody={}", requestBody);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
                 .header("Authorization", "Bearer " + openAiKey)
