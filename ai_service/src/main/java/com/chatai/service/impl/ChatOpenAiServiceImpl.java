@@ -1,5 +1,7 @@
 package com.chatai.service.impl;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.chatai.service.ChatOpenAiService;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
@@ -44,6 +46,8 @@ public class ChatOpenAiServiceImpl implements ChatOpenAiService {
         Response response = call.execute();
 
         String responseBody = response.body().string();
-       return responseBody;
+        JSONObject jsonObject = JSONObject.parseObject(requestBody);
+        String answer = JSONObject.parseObject(JSONObject.parseObject(JSONArray.parseArray(jsonObject.getString("choices")).get(0).toString()).getString("message")).getString("content");
+       return answer;
     }
 }
