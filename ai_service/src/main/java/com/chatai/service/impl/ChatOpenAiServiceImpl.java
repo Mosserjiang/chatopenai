@@ -46,7 +46,7 @@ public class ChatOpenAiServiceImpl implements ChatOpenAiService {
         Response response = call.execute();
 
         String responseBody = response.body().string();
-        JSONObject jsonObject = JSONObject.parseObject(requestBody);
+        JSONObject jsonObject = JSONObject.parseObject(responseBody);
         String answer = JSONObject.parseObject(JSONObject.parseObject(JSONArray.parseArray(jsonObject.getString("choices")).get(0).toString()).getString("message")).getString("content");
        return answer;
     }
