@@ -4,5 +4,5 @@ server:
 
 open:
   ai:
-    key: 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 #√ÿ‘ø
+    key: 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 #√ÿ‘ø
     modelChat: gpt-3.5-turbo-0301 #chat
